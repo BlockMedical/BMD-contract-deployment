@@ -7,8 +7,8 @@ to compile, migrate, and deploy the Solidity smart contracts to Ethereum public 
 
 ## Configuring credentials and private keys for deployment
 - `truffle.env`: A local file that contains 2 environment variables to configure.
-**MNENOMIC**: The 12/16 word phrase to import private keys for deployment inside the docker container.
-**INFURA_API_KEY**: The Infura API token/key to utilize Infura to relay the signed transaction for you. This is fine because you have already signed your transaction offline in your container environment. The Infura API provides you a convinient proxy to interact with the Ethereum blockchain without you running a full node locally. The signed transaction is protected by your private key and won't be altered during the entire submission.
+* **MNENOMIC**: The 12/16 word phrase to import private keys for deployment inside the docker container.
+* **INFURA_API_KEY**: The Infura API token/key to utilize Infura to relay the signed transaction for you. This is fine because you have already signed your transaction offline in your container environment. The Infura API provides you a convinient proxy to interact with the Ethereum blockchain without you running a full node locally. The signed transaction is protected by your private key and won't be altered during the entire submission.
 
 ## Starting Docker containers
 From the `Terminal`, kick off the following command:
