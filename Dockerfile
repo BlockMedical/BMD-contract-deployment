@@ -3,7 +3,7 @@ FROM blcksync/docker-solidity-development-framework:latest
 LABEL maintainer="al-blockmed"
 
 RUN cd /go/deploy ; \
-    git clone https://github.com/BlockMedical/BMD-smartcontract.git ; \
+    git clone -b encryption-v0.5.3 https://github.com/BlockMedical/BMD-smartcontract.git ; \
     cd BMD-smartcontract ; \
     npm install && \
     rm -rf ./build; truffle compile && \
