@@ -24,12 +24,23 @@ to run truffle commands to compile, migrate, and deploy your contracts.
 docker exec -it $(docker ps | grep 'alblockmed/bmdcontract-deployment:latest' | cut -d " " -f1) bash
 ```
 
+The command you will be using will be the least but not last of the followings:
+```
+truffle compile
+truffle migrate --network=ropstan
+# Dry run before submitting to the MAINNET
+truffle migrate --network=mainnet --dry-run
+# Submit to the MAINNET
+truffle migrate --network=mainnet
+```
+
 ## Stopping Docker containers
 ```
 docker-compose -f bmd.yml stop
 ```
 
-## Remove container and caches for local fresh start
+## Remove container and caches for local cleanup and a fresh start
+Make sure you do this. This removes the local cache so others cannot pick it up and re-use them.
 ```
 docker-compose -f bmd.yml rm -f
 ```
