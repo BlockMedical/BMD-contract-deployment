@@ -3,6 +3,12 @@ A repository to streamline development effort and environment to deploy BMD cont
 This pulls in a pre-build docker image which already include the tools we need, and utilize them
 to compile, migrate, and deploy the Solidity smart contracts to Ethereum public network.
 
+**Pre-requisite**
+You will need Docker installed. To download Docker and get started, visit official [Docker website here](https://www.docker.com/get-started). For a video tutorial, there are plenty of them online, however,
+we have found some nice ones on Youtube such as this one https://www.youtube.com/watch?v=K90yOMr8wXo
+**NOTE** We are not affiliated with the Youtube video provided, we are only providing it to help users installing
+Docker if they are a first time user. For more information, you can reach out to the [Docker community here](https://www.docker.com/docker-community)
+
 # Launching Docker images
 
 ## Configuring credentials and private keys for deployment
