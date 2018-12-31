@@ -20,6 +20,8 @@ Docker if they are a first time user. For more information, you can reach out to
 ## Starting Docker containers
 From the `Terminal`, kick off the following command:
 ```
+# Clean up old images first for fresh download, make sure we are using the latest images
+docker-compose -f bmd.yml down --rmi all
 docker-compose -f bmd.yml up
 ```
 
