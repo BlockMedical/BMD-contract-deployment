@@ -4,6 +4,8 @@ services:
     image: alblockmed/bmdcontract-deployment:latest
     stdin_open: true
     tty: true
+    env_file:
+      ./truffle.env
     networks:
       local-truffle-env:
         aliases:
