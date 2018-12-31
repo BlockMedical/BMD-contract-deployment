@@ -8,7 +8,7 @@ RUN cd /go/deploy ; \
     npm install && \
     rm -rf ./build; truffle compile && \
     cd .. ; \
-    git clone https://github.com/BlockMedical/BMV-ventureasset.git ; \
+    git clone -b v0.3.0 https://github.com/BlockMedical/BMV-ventureasset.git ; \
     cd BMV-ventureasset ; \
     npm install && \
     rm -rf ./build; truffle compile && \
