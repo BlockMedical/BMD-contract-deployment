@@ -2,8 +2,21 @@ version: "3"
 services:
   truffle:
     image: alblockmed/bmdcontract-deployment:latest
+    stdin_open: true
+    tty: true
+    networks:
+      local-truffle-env:
+        aliases:
+          - truffle
 
   ganache:
     image: blcksync/ganache-cli:latest
     ports:
       - 7545:7545
+    networks:
+      local-truffle-env:
+        aliases:
+          - ganache
+
+networks:
+  local-truffle-env:
