@@ -52,3 +52,5 @@ Make sure you do this. This removes the local cache so others cannot pick it up 
 ```
 docker-compose -f bmd.yml rm -f
 ```
+
+Author: al-blockmed
