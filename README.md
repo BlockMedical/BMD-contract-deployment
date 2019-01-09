@@ -42,6 +42,13 @@ truffle migrate --network=mainnet --dry-run
 truffle migrate --network=mainnet
 ```
 
+To copy out the contract ABI and JSON files after compiling them from the docker container,
+you can use the following command. e.g. assume the files are in `/root/deploy/BMD-smartcontract/build`
+```
+YOUR_CONTAINER_ID=$(docker ps | grep 'alblockmed/bmdcontract-deployment:latest' | cut -d " " -f1)
+docker cp $YOUR_CONTAINER_ID:/root/deploy/BMD-smartcontract/build .
+```
+
 ## Stopping Docker containers
 ```
 docker-compose -f bmd.yml stop
